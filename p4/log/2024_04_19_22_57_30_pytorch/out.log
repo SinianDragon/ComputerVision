@@ -1,0 +1,65 @@
+2024-04-19 22:57:30,471 - INFO - 
+Config:
+'add_train': False
+'batch_size': 128
+'continue_flag': ''
+'cur_time': '2024_04_19_22_57_30'
+'debug_mode': False
+'debug_num': 500
+'do_continue_train': False
+'do_figure_save': False
+'do_log_print_to_screen': True
+'do_log_save_to_file': True
+'do_predict': True
+'do_train': True
+'do_train_visualized': False
+'dropout_rate': 0.2
+'epoch': 10
+'feature_columns': [2, 3, 4, 5, 6, 7, 8]
+'figure_save_path': './figure/'
+'hidden_size': 128
+'input_size': 7
+'label_columns': [4, 5]
+'label_in_feature_index': [2, 3]
+'learning_rate': 0.001
+'log_save_path': './log/2024_04_19_22_57_30_pytorch/'
+'lstm_layers': 2
+'model_name': 'model_pytorch.pth'
+'model_postfix': {'pytorch': '.pth'
+'keras': '.h5'
+'tensorflow': '.ckpt'}
+'model_save_path': './checkpoint/pytorch/'
+'output_size': 2
+'patience': 3
+'predict_day': 1
+'random_seed': 42
+'shuffle_train_data': True
+'time_step': 60
+'train_data_path': 'cdata.csv'
+'train_data_rate': 0.95
+'use_cuda': True
+'used_frame': 'pytorch'
+'valid_data_rate': 0.25
+2024-04-19 22:57:31,532 - INFO - Epoch 1/10
+2024-04-19 22:57:31,884 - INFO - The train loss is 0.251366. The valid loss is 0.060991.
+2024-04-19 22:57:31,887 - INFO - Epoch 2/10
+2024-04-19 22:57:32,104 - INFO - The train loss is 0.030958. The valid loss is 0.023364.
+2024-04-19 22:57:32,106 - INFO - Epoch 3/10
+2024-04-19 22:57:32,324 - INFO - The train loss is 0.018638. The valid loss is 0.016857.
+2024-04-19 22:57:32,327 - INFO - Epoch 4/10
+2024-04-19 22:57:32,546 - INFO - The train loss is 0.014566. The valid loss is 0.013484.
+2024-04-19 22:57:32,548 - INFO - Epoch 5/10
+2024-04-19 22:57:32,764 - INFO - The train loss is 0.012122. The valid loss is 0.011016.
+2024-04-19 22:57:32,767 - INFO - Epoch 6/10
+2024-04-19 22:57:32,986 - INFO - The train loss is 0.010126. The valid loss is 0.008981.
+2024-04-19 22:57:32,988 - INFO - Epoch 7/10
+2024-04-19 22:57:33,200 - INFO - The train loss is 0.008541. The valid loss is 0.007313.
+2024-04-19 22:57:33,203 - INFO - Epoch 8/10
+2024-04-19 22:57:33,422 - INFO - The train loss is 0.007213. The valid loss is 0.005982.
+2024-04-19 22:57:33,425 - INFO - Epoch 9/10
+2024-04-19 22:57:33,644 - INFO - The train loss is 0.006107. The valid loss is 0.004817.
+2024-04-19 22:57:33,646 - INFO - Epoch 10/10
+2024-04-19 22:57:33,859 - INFO - The train loss is 0.005181. The valid loss is 0.003880.
+2024-04-19 22:57:33,880 - INFO - The mean squared error of stock ['low', 'high'] is [0.00643423 0.00461025]
+2024-04-19 22:57:33,964 - INFO - The predicted stock low for the next 1 day(s) is: 3397.955131488799
+2024-04-19 22:57:33,971 - INFO - The predicted stock high for the next 1 day(s) is: 3486.6309477050563

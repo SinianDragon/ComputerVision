@@ -1,0 +1,214 @@
+2024-04-19 22:41:20,925 - INFO - Config: {'feature_columns': [2, 3, 4, 5, 6, 7, 8], 'label_columns': [4, 5], 'predict_day': 1, 'label_in_feature_index': [2, 3], 'input_size': 7, 'output_size': 2, 'hidden_size': 128, 'lstm_layers': 2, 'dropout_rate': 0.2, 'time_step': 60, 'do_train': True, 'do_predict': True, 'shuffle_train_data': True, 'use_cuda': True, 'train_data_rate': 0.95, 'valid_data_rate': 0.25, 'batch_size': 128, 'learning_rate': 0.001, 'epoch': 10, 'patience': 3, 'random_seed': 42, 'train_data_path': 'cdata.csv', 'model_save_path': './checkpoint/pytorch/', 'figure_save_path': './figure/', 'log_save_path': './log/', 'do_log_print_to_screen': True, 'do_log_save_to_file': True, 'do_figure_save': False, 'do_train_visualized': False}
+2024-04-19 22:41:20,935 - ERROR - Run Error: Excel file format cannot be determined, you must specify an engine manually.
+Traceback (most recent call last):
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\project4.2.py", line 104, in main
+    data = pd.read_excel(config.train_data_path, usecols=config.feature_columns).values
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\pandas\io\excel\_base.py", line 1554, in __init__
+    raise ValueError(
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+2024-04-19 22:44:46,849 - INFO - Config: {'feature_columns': [2, 3, 4, 5, 6, 7, 8], 'label_columns': [4, 5], 'predict_day': 1, 'label_in_feature_index': [2, 3], 'input_size': 7, 'output_size': 2, 'hidden_size': 128, 'lstm_layers': 2, 'dropout_rate': 0.2, 'time_step': 60, 'do_train': True, 'do_predict': True, 'shuffle_train_data': True, 'use_cuda': True, 'train_data_rate': 0.95, 'valid_data_rate': 0.25, 'batch_size': 128, 'learning_rate': 0.001, 'epoch': 10, 'patience': 3, 'random_seed': 42, 'train_data_path': 'cdata.csv', 'model_save_path': './checkpoint/pytorch/', 'figure_save_path': './figure/', 'log_save_path': './log/', 'do_log_print_to_screen': True, 'do_log_save_to_file': True, 'do_figure_save': False, 'do_train_visualized': False}
+2024-04-19 22:44:46,860 - ERROR - Run Error: Excel file format cannot be determined, you must specify an engine manually.
+Traceback (most recent call last):
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\project4.2.py", line 104, in main
+    data = pd.read_excel(config.train_data_path, usecols=config.feature_columns).values
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\pandas\io\excel\_base.py", line 1554, in __init__
+    raise ValueError(
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+2024-04-19 22:45:24,648 - INFO - Config: {'feature_columns': [2, 3, 4, 5, 6, 7, 8], 'label_columns': [4, 5], 'predict_day': 1, 'label_in_feature_index': [2, 3], 'input_size': 7, 'output_size': 2, 'hidden_size': 128, 'lstm_layers': 2, 'dropout_rate': 0.2, 'time_step': 60, 'do_train': True, 'do_predict': True, 'shuffle_train_data': True, 'use_cuda': True, 'train_data_rate': 0.95, 'valid_data_rate': 0.25, 'batch_size': 128, 'learning_rate': 0.001, 'epoch': 10, 'patience': 3, 'random_seed': 42, 'train_data_path': 'cdata.csv', 'model_save_path': './checkpoint/pytorch/', 'figure_save_path': './figure/', 'log_save_path': './log/', 'do_log_print_to_screen': True, 'do_log_save_to_file': True, 'do_figure_save': False, 'do_train_visualized': False}
+2024-04-19 22:45:24,908 - ERROR - Run Error: File is not a zip file
+Traceback (most recent call last):
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\project4.2.py", line 104, in main
+    data = pd.read_excel(config.train_data_path, usecols=config.feature_columns,engine='openpyxl').values
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 553, in __init__
+    super().__init__(
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\pandas\io\excel\_base.py", line 573, in __init__
+    self.book = self.load_workbook(self.handles.handle, engine_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 572, in load_workbook
+    return load_workbook(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\openpyxl\reader\excel.py", line 344, in load_workbook
+    reader = ExcelReader(filename, read_only, keep_vba,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\openpyxl\reader\excel.py", line 123, in __init__
+    self.archive = _validate_archive(fn)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\openpyxl\reader\excel.py", line 95, in _validate_archive
+    archive = ZipFile(filename, 'r')
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\JetBrains\PyCharm 2023.1.2\Python\Lib\zipfile.py", line 1301, in __init__
+    self._RealGetContents()
+  File "D:\JetBrains\PyCharm 2023.1.2\Python\Lib\zipfile.py", line 1368, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2024-04-19 22:46:31,990 - INFO - Config: {'feature_columns': [2, 3, 4, 5, 6, 7, 8], 'label_columns': [4, 5], 'predict_day': 1, 'label_in_feature_index': [2, 3], 'input_size': 7, 'output_size': 2, 'hidden_size': 128, 'lstm_layers': 2, 'dropout_rate': 0.2, 'time_step': 60, 'do_train': True, 'do_predict': True, 'shuffle_train_data': True, 'use_cuda': True, 'train_data_rate': 0.95, 'valid_data_rate': 0.25, 'batch_size': 128, 'learning_rate': 0.001, 'epoch': 10, 'patience': 3, 'random_seed': 42, 'train_data_path': 'cdata.csv', 'model_save_path': './checkpoint/pytorch/', 'figure_save_path': './figure/', 'log_save_path': './log/', 'do_log_print_to_screen': True, 'do_log_save_to_file': True, 'do_figure_save': False, 'do_train_visualized': False}
+2024-04-19 22:46:32,227 - ERROR - Run Error: 'Config' object has no attribute 'add_train'
+Traceback (most recent call last):
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\project4.2.py", line 128, in main
+    train(config, logger, [train_X, train_Y, valid_X, valid_Y])
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\LSTM_pytorch.py", line 47, in train
+    if config.add_train:                # 如果是增量训练，会先加载原模型参数
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'Config' object has no attribute 'add_train'
+2024-04-19 22:47:57,527 - INFO - Config: {'feature_columns': [2, 3, 4, 5, 6, 7, 8], 'label_columns': [4, 5], 'predict_day': 1, 'label_in_feature_index': [2, 3], 'add_train': False, 'input_size': 7, 'output_size': 2, 'hidden_size': 128, 'lstm_layers': 2, 'dropout_rate': 0.2, 'time_step': 60, 'do_train': True, 'do_predict': True, 'shuffle_train_data': True, 'use_cuda': True, 'train_data_rate': 0.95, 'valid_data_rate': 0.25, 'batch_size': 128, 'learning_rate': 0.001, 'epoch': 10, 'patience': 3, 'random_seed': 42, 'train_data_path': 'cdata.csv', 'model_save_path': './checkpoint/pytorch/', 'figure_save_path': './figure/', 'log_save_path': './log/', 'do_log_print_to_screen': True, 'do_log_save_to_file': True, 'do_figure_save': False, 'do_train_visualized': False}
+2024-04-19 22:47:58,621 - INFO - Epoch 1/10
+2024-04-19 22:47:58,672 - ERROR - Run Error: 'Config' object has no attribute 'do_continue_train'
+Traceback (most recent call last):
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\project4.2.py", line 128, in main
+    train(config, logger, [train_X, train_Y, valid_X, valid_Y])
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\LSTM_pytorch.py", line 65, in train
+    if not config.do_continue_train:
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Config' object has no attribute 'do_continue_train'
+2024-04-19 22:48:19,720 - INFO - Config: {'feature_columns': [2, 3, 4, 5, 6, 7, 8], 'label_columns': [4, 5], 'predict_day': 1, 'label_in_feature_index': [2, 3], 'add_train': False, 'do_continue_train': False, 'input_size': 7, 'output_size': 2, 'hidden_size': 128, 'lstm_layers': 2, 'dropout_rate': 0.2, 'time_step': 60, 'do_train': True, 'do_predict': True, 'shuffle_train_data': True, 'use_cuda': True, 'train_data_rate': 0.95, 'valid_data_rate': 0.25, 'batch_size': 128, 'learning_rate': 0.001, 'epoch': 10, 'patience': 3, 'random_seed': 42, 'train_data_path': 'cdata.csv', 'model_save_path': './checkpoint/pytorch/', 'figure_save_path': './figure/', 'log_save_path': './log/', 'do_log_print_to_screen': True, 'do_log_save_to_file': True, 'do_figure_save': False, 'do_train_visualized': False}
+2024-04-19 22:48:20,829 - INFO - Epoch 1/10
+2024-04-19 22:48:21,257 - ERROR - Run Error: The size of tensor a (2) must match the size of tensor b (7) at non-singleton dimension 2
+Traceback (most recent call last):
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\project4.2.py", line 129, in main
+    train(config, logger, [train_X, train_Y, valid_X, valid_Y])
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\LSTM_pytorch.py", line 71, in train
+    loss = criterion(pred_Y, _train_Y)  # 计算loss
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\loss.py", line 535, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\functional.py", line 3338, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\functional.py", line 76, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)  # type: ignore[attr-defined]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: The size of tensor a (2) must match the size of tensor b (7) at non-singleton dimension 2
+2024-04-19 22:50:37,693 - INFO - Config: {'feature_columns': [2, 3, 4, 5, 6, 7, 8], 'label_columns': [4, 5], 'predict_day': 1, 'label_in_feature_index': [2, 3], 'add_train': False, 'do_continue_train': False, 'input_size': 7, 'output_size': 2, 'hidden_size': 128, 'lstm_layers': 2, 'dropout_rate': 0.2, 'time_step': 60, 'do_train': True, 'do_predict': True, 'shuffle_train_data': True, 'use_cuda': True, 'train_data_rate': 0.95, 'valid_data_rate': 0.25, 'batch_size': 128, 'learning_rate': 0.001, 'epoch': 10, 'patience': 3, 'random_seed': 42, 'train_data_path': 'cdata.csv', 'model_save_path': './checkpoint/pytorch/', 'figure_save_path': './figure/', 'log_save_path': './log/', 'do_log_print_to_screen': True, 'do_log_save_to_file': True, 'do_figure_save': False, 'do_train_visualized': False}
+2024-04-19 22:50:37,704 - ERROR - Run Error: Excel file format cannot be determined, you must specify an engine manually.
+Traceback (most recent call last):
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\project4.2.py", line 105, in main
+    data = pd.read_excel(config.train_data_path, usecols=config.feature_columns).values
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+         ^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\pandas\io\excel\_base.py", line 1554, in __init__
+    raise ValueError(
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+2024-04-19 22:51:34,915 - INFO - Config: {'feature_columns': [2, 3, 4, 5, 6, 7, 8], 'label_columns': [4, 5], 'predict_day': 1, 'label_in_feature_index': [2, 3], 'add_train': False, 'do_continue_train': False, 'input_size': 7, 'output_size': 2, 'hidden_size': 128, 'lstm_layers': 2, 'dropout_rate': 0.2, 'time_step': 60, 'do_train': True, 'do_predict': True, 'shuffle_train_data': True, 'use_cuda': True, 'train_data_rate': 0.95, 'valid_data_rate': 0.25, 'batch_size': 128, 'learning_rate': 0.001, 'epoch': 10, 'patience': 3, 'random_seed': 42, 'train_data_path': 'cdata.csv', 'model_save_path': './checkpoint/pytorch/', 'figure_save_path': './figure/', 'log_save_path': './log/', 'do_log_print_to_screen': True, 'do_log_save_to_file': True, 'do_figure_save': False, 'do_train_visualized': False}
+2024-04-19 22:51:35,983 - INFO - Epoch 1/10
+2024-04-19 22:51:36,392 - ERROR - Run Error: The size of tensor a (2) must match the size of tensor b (7) at non-singleton dimension 2
+Traceback (most recent call last):
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\project4.2.py", line 129, in main
+    train(config, logger, [train_X, train_Y, valid_X, valid_Y])
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\LSTM_pytorch.py", line 71, in train
+    loss = criterion(pred_Y, _train_Y)  # 计算loss
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\loss.py", line 535, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\functional.py", line 3338, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\functional.py", line 76, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)  # type: ignore[attr-defined]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: The size of tensor a (2) must match the size of tensor b (7) at non-singleton dimension 2
+2024-04-19 22:54:33,860 - INFO - Config: {'feature_columns': [2, 3, 4, 5, 6, 7, 8], 'label_columns': [4, 5], 'predict_day': 1, 'label_in_feature_index': [2, 3], 'add_train': False, 'do_continue_train': False, 'input_size': 7, 'output_size': 2, 'hidden_size': 128, 'lstm_layers': 2, 'dropout_rate': 0.2, 'time_step': 60, 'do_train': True, 'do_predict': True, 'shuffle_train_data': True, 'use_cuda': True, 'train_data_rate': 0.95, 'valid_data_rate': 0.25, 'batch_size': 128, 'learning_rate': 0.001, 'epoch': 10, 'patience': 3, 'random_seed': 42, 'train_data_path': 'cdata.csv', 'model_save_path': './checkpoint/pytorch/', 'figure_save_path': './figure/', 'log_save_path': './log/', 'do_log_print_to_screen': True, 'do_log_save_to_file': True, 'do_figure_save': False, 'do_train_visualized': False}
+2024-04-19 22:54:34,927 - INFO - Epoch 1/10
+2024-04-19 22:54:35,347 - ERROR - Run Error: The size of tensor a (2) must match the size of tensor b (7) at non-singleton dimension 2
+Traceback (most recent call last):
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\project4.2.py", line 131, in main
+    train(config, logger, [train_X, train_Y, valid_X, valid_Y])
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\LSTM_pytorch.py", line 71, in train
+    loss = criterion(pred_Y, _train_Y)  # 计算loss
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\loss.py", line 535, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\functional.py", line 3338, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\functional.py", line 76, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)  # type: ignore[attr-defined]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: The size of tensor a (2) must match the size of tensor b (7) at non-singleton dimension 2
+2024-04-19 22:55:15,826 - INFO - Config: {'feature_columns': [2, 3, 4, 5, 6, 7, 8], 'label_columns': [4, 5], 'predict_day': 1, 'label_in_feature_index': [2, 3], 'add_train': False, 'do_continue_train': False, 'input_size': 7, 'output_size': 2, 'hidden_size': 128, 'lstm_layers': 2, 'dropout_rate': 0.2, 'time_step': 60, 'do_train': True, 'do_predict': True, 'shuffle_train_data': True, 'use_cuda': True, 'train_data_rate': 0.95, 'valid_data_rate': 0.25, 'batch_size': 128, 'learning_rate': 0.001, 'epoch': 10, 'patience': 3, 'random_seed': 42, 'train_data_path': 'cdata.csv', 'model_save_path': './checkpoint/pytorch/', 'figure_save_path': './figure/', 'log_save_path': './log/', 'do_log_print_to_screen': True, 'do_log_save_to_file': True, 'do_figure_save': False, 'do_train_visualized': False}
+2024-04-19 22:55:16,902 - INFO - Epoch 1/10
+2024-04-19 22:55:17,391 - ERROR - Run Error: The size of tensor a (2) must match the size of tensor b (7) at non-singleton dimension 2
+Traceback (most recent call last):
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\project4.2.py", line 131, in main
+    train(config, logger, [train_X, train_Y, valid_X, valid_Y])
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\LSTM_pytorch.py", line 71, in train
+    loss = criterion(pred_Y, _train_Y)  # 计算loss
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\loss.py", line 535, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\functional.py", line 3338, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\functional.py", line 76, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)  # type: ignore[attr-defined]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: The size of tensor a (2) must match the size of tensor b (7) at non-singleton dimension 2
+2024-04-19 22:55:44,439 - INFO - Config: {'feature_columns': [2, 3, 4, 5, 6, 7, 8], 'label_columns': [4, 5], 'predict_day': 1, 'label_in_feature_index': [2, 3], 'add_train': False, 'do_continue_train': False, 'input_size': 7, 'output_size': 2, 'hidden_size': 128, 'lstm_layers': 2, 'dropout_rate': 0.2, 'time_step': 60, 'do_train': True, 'do_predict': True, 'shuffle_train_data': True, 'use_cuda': True, 'train_data_rate': 0.95, 'valid_data_rate': 0.25, 'batch_size': 128, 'learning_rate': 0.001, 'epoch': 10, 'patience': 3, 'random_seed': 42, 'train_data_path': 'cdata.csv', 'model_save_path': './checkpoint/pytorch/', 'figure_save_path': './figure/', 'log_save_path': './log/', 'do_log_print_to_screen': True, 'do_log_save_to_file': True, 'do_figure_save': False, 'do_train_visualized': False}
+2024-04-19 22:55:45,459 - INFO - Epoch 1/10
+2024-04-19 22:55:45,872 - ERROR - Run Error: The size of tensor a (2) must match the size of tensor b (7) at non-singleton dimension 2
+Traceback (most recent call last):
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\project4.2.py", line 131, in main
+    train(config, logger, [train_X, train_Y, valid_X, valid_Y])
+  File "C:\Users\13012\PycharmProjects\pythonProject11\p4\LSTM_pytorch.py", line 71, in train
+    loss = criterion(pred_Y, _train_Y)  # 计算loss
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\modules\loss.py", line 535, in forward
+    return F.mse_loss(input, target, reduction=self.reduction)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\nn\functional.py", line 3338, in mse_loss
+    expanded_input, expanded_target = torch.broadcast_tensors(input, target)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\13012\PycharmProjects\pythonProject11\venv\Lib\site-packages\torch\functional.py", line 76, in broadcast_tensors
+    return _VF.broadcast_tensors(tensors)  # type: ignore[attr-defined]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: The size of tensor a (2) must match the size of tensor b (7) at non-singleton dimension 2
